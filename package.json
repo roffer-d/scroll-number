@@ -1,8 +1,8 @@
 {
-  "name": "scroll-number",
-  "version": "0.1.0",
+  "name": "r-scroll-number",
+  "version": "0.1.2",
   "private": false,
-  "main": "lib/index.umd.min.js",
+  "main": "./src/components/index.js",
   "keywords": [
     "scroll",
     "number"
@@ -12,10 +12,15 @@
     "name": "Roffer",
     "url": "www.lonhey.com"
   },
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/roffer-d/scroll-number"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name scrollNumber --dest lib --filename index --formats umd-min ./src/components/index.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",

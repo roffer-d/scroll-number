@@ -48,7 +48,9 @@ export default {
       this.valueList = `${this.value}`.split('')
       this.valueList.forEach((item,index)=>{
         setTimeout(()=>{
-          this.$refs[`number-item-child-${index}`].style.transform = `translate(0,${-item * 10}%)`
+          let dom = this.$refs[`number-item-child-${index}`]
+          dom = dom.length ? dom[0] : dom
+          dom.style.transform = `translate(0,${-item * 10}%)`
         },50)
       })
     }

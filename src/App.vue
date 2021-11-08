@@ -3,12 +3,8 @@
 </template>
 
 <script>
-import scrollNumber from "./components/scrollNumber";
 export default {
   name: 'App',
-  components: {
-    scrollNumber
-  },
   data(){
     return {
       value:9876
