@@ -1,15 +1,21 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <scroll-number :value="value" speed="3s" />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import scrollNumber from "./components/scrollNumber";
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    scrollNumber
+  },
+  data(){
+    return {
+      value:9876
+    }
+  },
+  mounted() {
+
   }
 }
 </script>
